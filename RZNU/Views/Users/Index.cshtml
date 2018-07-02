@@ -1,0 +1,31 @@
+﻿@model IEnumerable<RZNU.Models.User>
+@{
+    ViewBag.Title = "Customers";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>List of users</h2>
+
+@if (!Model.Any()) {
+    <p>No users yet!</p>
+
+} else {
+
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model) {
+                <tr>
+                    <th scope="row">@user.Id</th>
+                    <td>@Html.ActionLink(user.Name, "Details", "Users", new { id = user.Id }, null)</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+

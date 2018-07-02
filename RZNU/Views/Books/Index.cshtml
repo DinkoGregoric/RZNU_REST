@@ -1,0 +1,38 @@
+﻿@model IEnumerable<RZNU.Models.Book>
+@{
+    ViewBag.Title = "Books";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>List of books</h2>
+
+@if (!Model.Any()) {
+    <p>No books here.</p>
+
+} else {
+
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Genre</th>
+                <th scope="col">Author</th>
+                <th scope="col">Year Created</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var book in Model) {
+                <tr>
+                    <th scope="row">@book.Id</th>
+                    
+                    <td>@book.Name</td>
+                    <td>@book.Genre</td>
+                    <td>@book.AuthorName</td>
+                    <td>@book.YearCreated</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RZNU", "RZNU\RZNU.csproj", "{BCE2CCA6-8F5B-4C2B-AB2A-1F6F96C7657B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCE2CCA6-8F5B-4C2B-AB2A-1F6F96C7657B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCE2CCA6-8F5B-4C2B-AB2A-1F6F96C7657B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCE2CCA6-8F5B-4C2B-AB2A-1F6F96C7657B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCE2CCA6-8F5B-4C2B-AB2A-1F6F96C7657B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DF56F23A-5FA8-4CE6-B1E6-7C9C6508A44B}
+	EndGlobalSection
+EndGlobal
